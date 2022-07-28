@@ -1,0 +1,74 @@
+.container__input {
+  min-height: 50vh;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(86, 163, 121, 0.496);
+  padding: 0.25rem 1rem;
+  margin-left: calc(100vw - 8rem);
+  border-radius: 1rem;
+}
+
+.input {
+  border-radius: 1rem;
+  margin-block: 0.5rem 1rem;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+}
+
+form {
+  text-align: center;
+}
+
+form::focus {
+  text-decoration: none;
+}
+
+.form__welcome {
+  z-index: 40;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1rem;
+}
+
+.form__welcome input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.form__welcome button {
+  border: none;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+select {
+  background-color: transparent;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 0.25rem;
+  width: 95%;
+  padding: 0.35rem 2rem;
+}

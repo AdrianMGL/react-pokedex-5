@@ -1,0 +1,373 @@
+.container-fluid {
+  padding-inline: 1.5rem;
+}
+
+.container__welcome {
+  margin-block: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.card__icon-welcome {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 0.5rem;
+}
+
+.wrapper {
+  margin: 0.15rem;
+  padding: 0.15rem;
+}
+
+.card {
+  padding: 0.1rem 0;
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-bottom: 5px solid transparent;
+}
+
+.card:hover {
+  border-bottom: 5px solid var(--color-electric);
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 25rem;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(51, 100%, 70%),
+    hsl(50, 69%, 90%)
+  );
+  clip-path: circle(30rem at 50% -30%);
+}
+
+.card__bg {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.card__bg-item {
+  width: 80%;
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  margin-left: 40%;
+  opacity: 0.35;
+}
+
+.card__id {
+  text-align: right;
+  font-size: 1.75rem;
+  color: rgba(130, 130, 130, 0.75);
+  padding: 0.75rem 1.5rem;
+  z-index: 15;
+  position: relative;
+}
+
+.card__image {
+  width: 100%;
+  position: relative;
+  top: -3.5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card__name {
+  color: rgb(80, 80, 80);
+  font-size: 1.65rem;
+  margin-block: 0.1rem;
+  text-transform: capitalize;
+  position: relative;
+  top: -2rem;
+}
+
+.card__body {
+  position: relative;
+  top: -2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem 0.1rem;
+  margin: 0.75rem 0.75rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+:is(.card__weight, .card__height) span {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+:is(.card__weight-name, .card__height-name, .card__types-name) {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgb(80, 80, 80);
+}
+
+.card__types {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__types-item {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+  padding: 0.01rem 0.65rem;
+}
+
+.card__types-name {
+  margin-inline: 0.15rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.card__footer {
+  position: relative;
+  top: -2rem;
+  margin: 0 0.75rem 0 0.75rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: rgb(95, 95, 95);
+}
+
+.card__footer .abilities {
+  text-align: center;
+  padding: 0.15rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.card__abilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem 1rem;
+  margin-top: 0.15rem;
+  gap: 1rem;
+}
+
+.card__ability-name {
+  color: white;
+  border-radius: 1rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.75rem;
+}
+
+.name__coach {
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+}
+
+/** Pagination */
+
+.content__page {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-block: 1rem 2rem;
+  margin-inline: auto;
+}
+
+.pagination__pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+.one {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.11rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.two {
+  width: 1.5rem;
+  padding: 0.35rem;
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+  color: gray;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(130, 130, 130, 0.4);
+  cursor: pointer;
+}
+
+.two:hover {
+  box-shadow: 1px 1px 15px rgba(130, 130, 130, 0.85);
+}
+
+/**
+*
+* Breakpoints
+*
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card {
+    padding: 1rem;
+    margin: 1.5rem;
+  }
+
+  select {
+    margin-top: 0.35rem;
+    width: 60%;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container__welcome {
+    font-size: 1.5rem;
+  }
+
+  .container__welcome h5 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 1rem;
+    margin: 1.5rem;
+  }
+
+  .card::before {
+    clip-path: circle(30rem at 50% -55%);
+  }
+
+  .card__image {
+    top: -2rem;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 0.2fr 1.35fr 1fr;
+  }
+
+  select {
+    margin: 0.8rem 0.1rem;
+    width: 85%;
+    padding: 0.1rem 1rem;
+  }
+}
+
+/* Large devices (desktops, 849px and up) */
+@media (min-width: 849px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 0.2fr 1.35fr 1fr;
+  }
+
+  select {
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .card {
+    padding: 0.15rem;
+    margin: 0.75rem;
+  }
+
+  .form {
+    margin-inline: 1rem;
+    padding: 0;
+    grid-template-columns: 0.2fr 1.35fr 1fr;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    padding: 0.1rem;
+    margin: 0.25rem;
+  }
+
+  .card::before {
+    clip-path: circle(30rem at 50% -55%);
+  }
+
+  select {
+    width: 70%;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    margin-inline: auto;
+  }
+
+  .card {
+    padding: 0.1rem;
+    margin: 0.75rem;
+  }
+
+  select {
+    width: 50%;
+  }
+}

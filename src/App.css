@@ -1,0 +1,107 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+} */
+
+/*
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+*/
+
+/**
+* Types Pokemon
+*
+*/
+:root {
+  --color-normal: rgba(116, 116, 116, 0.75);
+  --color-fighting: rgba(255, 0, 0, 0.828);
+  --color-flying: rgba(230, 146, 241, 0.92);
+  --color-poison: rgb(201, 142, 190);
+  --color-ground: rgba(255, 166, 0, 0.835);
+  --color-rock: rgba(195, 156, 106, 0.946);
+  --color-bug: rgb(188, 235, 94);
+  --color-ghost: rgba(165, 119, 185, 0.774);
+  --color-steel: rgb(53, 171, 198);
+  --color-fire: rgb(255, 166, 94);
+  --color-water: rgb(124, 160, 226);
+  --color-electric: rgb(255, 225, 0);
+  --color-psychic: rgb(241, 130, 167);
+  --color-ice: rgba(109, 255, 255, 0.859);
+  --color-dragon: rgba(148, 0, 211, 0.987);
+  --color-dark: rgb(177, 147, 108);
+  --color-fairy: rgb(251, 177, 190);
+  --color-grass: rgba(128, 214, 128, 0.948);
+}
+
+.normal {
+  background-color: var(--color-normal);
+}
+.fighting {
+  background-color: var(--color-fighting);
+}
+.flying {
+  background-color: var(--color-flying);
+}
+.poison {
+  background-color: var(--color-poison);
+}
+.ground {
+  background-color: var(--color-ground);
+}
+.rock {
+  background-color: var(--color-rock);
+}
+.bug {
+  background-color: var(--color-bug);
+}
+.ghost {
+  background-color: var(--color-ghost);
+}
+.steel {
+  background-color: var(--color-steel);
+}
+.fire {
+  background-color: var(--color-fire);
+}
+.water {
+  background-color: var(--color-water);
+}
+.grass {
+  background-color: var(--color-grass);
+}
+.electric {
+  background-color: var(--color-electric);
+}
+.psychic {
+  background-color: var(--color-psychic);
+}
+.ice {
+  background-color: var(--color-ice);
+}
+.dragon {
+  background-color: var(--color-dragon);
+}
+.dark {
+  background-color: var(--color-dark);
+}
+.fairy {
+  background-color: var(--color-fairy);
+}
+
+.btn {
+  /* background-color: aqua; */
+}
